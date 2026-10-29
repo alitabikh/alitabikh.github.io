@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ali Tabikh · GIS & Remote Sensing</title>
-  <meta name="description" content="GIS and remote sensing portfolio of Ali Tabikh: drought monitoring, health access and river basin projects made with ArcGIS Pro, Python and Google Earth Engine.">
+  <meta name="description" content="GIS and remote sensing portfolio of Ali Tabikh: drought monitoring, health access, river basins and a 3D land-cover atlas, made with ArcGIS Pro, Python and Google Earth Engine.">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -91,8 +91,8 @@
         </div>
         <ul class="about__stats reveal">
           <li><b>2+</b><span>years of hands-on ArcGIS</span></li>
-          <li><b>3</b><span>complete GIS projects</span></li>
-          <li><b>16</b><span>river basins mapped in one automated atlas</span></li>
+          <li><b>4</b><span>complete GIS projects</span></li>
+          <li><b>25</b><span>atlas sheets made by script (16 basins, 9 countries)</span></li>
           <li><b>4</b><span>Esri &amp; data courses</span></li>
         </ul>
       </div>
@@ -106,12 +106,12 @@
           <article class="service reveal">
             <i class="ri-map-2-line"></i>
             <h3>Maps &amp; cartography</h3>
-            <p>Clear, print-ready map series and atlases in ArcGIS Pro, with one consistent layout.</p>
+            <p>Print-ready map series and atlases with one consistent layout, including shaded-relief land-cover maps with a 3D look.</p>
           </article>
           <article class="service reveal">
             <i class="ri-earth-line"></i>
             <h3>Remote sensing</h3>
-            <p>Google Earth Engine: land use / land cover classification (supervised and unsupervised), drought indices, water extent.</p>
+            <p>Google Earth Engine: land use / land cover classification (supervised and unsupervised), drought indices, water extent, and batch export of global open data (ESA WorldCover, Copernicus DEM).</p>
           </article>
           <article class="service reveal">
             <i class="ri-bar-chart-box-line"></i>
@@ -121,7 +121,7 @@
           <article class="service reveal">
             <i class="ri-code-s-slash-line"></i>
             <h3>Automation</h3>
-            <p>Python (arcpy) scripts that repeat the work: one template, every map in a single run.</p>
+            <p>Python (arcpy, NumPy, matplotlib) scripts that repeat the work: one template, every map in a single run.</p>
           </article>
         </div>
       </div>
@@ -131,6 +131,22 @@
     <section class="projects section" id="projects">
       <div class="container">
         <h2 class="section__title reveal">Projects</h2>
+
+        <article class="project reveal">
+          <a class="project__image" href="view/landcover.html"><img src="assets/img/p7_landcover.jpg" alt="Shaded-relief land-cover maps of nine countries" loading="lazy"></a>
+          <div class="project__data">
+            <p class="project__tag">Global open data · shaded relief · automation</p>
+            <h3 class="project__title">Land cover in 3D relief – a 9-country atlas</h3>
+            <p>ESA WorldCover land cover draped on a shaded Copernicus terrain model for nine countries,
+              from Lebanon to Nepal and Iceland. Google Earth Engine prepares the data; one Python script
+              draws every A4 sheet from the same template, with the share of each land-cover class.</p>
+            <p class="project__tools">Google Earth Engine · ArcGIS Pro (arcpy) · Python · NumPy · matplotlib</p>
+            <div class="project__buttons">
+              <a class="button button--small" href="view/landcover.html">See the atlas <i class="ri-arrow-right-up-line"></i></a>
+              <a class="button button--small button--ghost" href="land-cover/report/P7_LandCover_3D_Atlas_web.pdf" download><i class="ri-download-2-line"></i> PDF</a>
+            </div>
+          </div>
+        </article>
 
         <article class="project reveal">
           <a class="project__image" href="river-basins/web/"><img src="assets/img/p3_basins.jpg" alt="Atlas sheet of the Litani basin" loading="lazy"></a>
